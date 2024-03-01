@@ -118,7 +118,7 @@ void tree(TreeNodePtr treePtr, int x)
    if (treePtr != NULL)
    {
       tree(treePtr->rightPtr,x+1); // Recursion to the right
-      for(int n=0;n<x*3;n++) printf("   ");
+      for(int n=0;n<x*5;n++) printf("   ");
       printf("%3d\n", treePtr->data); // print the value
       tree(treePtr->leftPtr,x+1); // Recursion to the left
    }  
